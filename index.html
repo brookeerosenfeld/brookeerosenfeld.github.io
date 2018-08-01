@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<center>
+<head>
+<link
+rel="stylesheet"
+href="myStyles.css">
+<script src ="myScrpt.js">
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-fading" src="newheadshot.PNG" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pacpic.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="Israel.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="dolphin.jpg" style="width:100%">
+</div>
+</body>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 150px;
+    text-align: center;
+}
+
+.header-site{
+   background-color: #000000;
+   background-image: "mySlides"";
+   background-position: 100%;
+   background-repeat: no-repeat;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: middle;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Brooke Rosenfeld</h1>
+</div>
+
+<div class="topnav">
+  <a href="aboutmetab2.html">About Me</a>
+    <div>
+  <a href="aboutmetab1.html">Interactive Resume</a>
+</div>
+
+</body>
+
+
+
+</head>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+
+</body>
+
+
+
+<!-- Slideshow container -->
