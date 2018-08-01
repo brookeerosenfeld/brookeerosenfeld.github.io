@@ -25,4 +25,21 @@ I am currently a Senior at Weston High School. Some interesting facts about me a
   <img class="mySlides w3-animate-fading" src="Israel.jpg" width="400" height="400">
   <img class="mySlides w3-animate-fading" src="dolphin.jpg" width="400" height="400">
 </div>
+  
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 500);
+}
+</script>
 </body>
